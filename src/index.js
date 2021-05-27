@@ -6,8 +6,8 @@ import "./functionBased/App.css"
 import { BrowserRouter } from "react-router-dom"
 
 ReactDOM.render(
-    <BrowserRouter>
-        <TodoContainer />
-    </BrowserRouter>,
-    document.getElementById("root")
-)
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <TodoContainer />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
