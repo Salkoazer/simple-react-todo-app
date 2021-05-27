@@ -6,8 +6,10 @@ import "./functionBased/App.css";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <TodoContainer />
-  </BrowserRouter>,
+  <React.StrictMode>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <TodoContainer />
+    </BrowserRouter>
+  </React.StrictMode>,
   document.getElementById("root")
 );
